@@ -36,7 +36,7 @@ header {
 #navbar ul {
   height: 80%;
   padding: 0;
-  overflow: hidden auto; /* Es raro que se herede bien al viewport de telefono pero aqui en la normal no se aplica, no sé por qué */
+  overflow: hidden scroll; /* Es raro que se herede bien al viewport de telefono pero aqui en la normal no se aplica, no sé por qué */
 }
 
 #navbar li {
