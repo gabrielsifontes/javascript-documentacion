@@ -24,9 +24,10 @@ header {
   top: 0px;
   left: 0px;
   width: 16em;
-  border-right: solid;
+  border-right: 3px solid black;
   border-color: black;
   margin: 0;
+  height: 100%;
 }
 
 #navbar header {
@@ -36,7 +37,8 @@ header {
 #navbar ul {
   height: 80%;
   padding: 0;
-  overflow: hidden auto; /* Es raro que se herede bien al viewport de telefono pero aqui en la normal no se aplica, no sé por qué */
+  overflow-y: auto;
+  border-top: 3px solid black;
 }
 
 #navbar li {
@@ -45,6 +47,12 @@ header {
   text-align: left;
   margin: 0 0;
   border-top: 1px solid black;
+}
+#navbar li:first-child {
+  border-top: 0
+}
+#navbar li:last-child {
+  border-bottom: 3px solid black;
 }
 
 #navbar a {
@@ -119,6 +127,9 @@ li {
   
   #navbar li:first-child {
     border-top: 0;
+  }
+  #navbar li:last-child {
+    border-bottom: 0;
   }
   
 }
